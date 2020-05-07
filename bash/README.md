@@ -44,11 +44,11 @@ You will have an ssh service listening on port 10000 with the user "ctf" and pas
 
 > Taskbash6 -> Taskbash7
 
-### Configuration ###
+### **Configuration** ###
 
 You will have to firstly build the task image and then for the production server you have to navigate to SSH_Container and build an image of the container that will listen for ssh connexions and manage each connexion by connecting it to a separate container
 
-#### **1st Image** ####
+### 1st Image ###
 
 **1-Build the docker image**
 
@@ -63,7 +63,7 @@ sudo docker build . -t priv
 sudo docker run -it priv /bin/bash
 ```
 
-#### **2nd Image** ####
+### 2nd Image ###
 
 In the production server we will build the image of the container that will manage ssh connexions for us , navigate to SSH_Container and:
 
