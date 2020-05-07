@@ -1,0 +1,10 @@
+CREATE USER 'kahla'@'localhost' IDENTIFIED BY '123456';
+GRANT ALL PRIVILEGES ON *.* TO 'kahla'@'localhost' ;
+Connect to kahla : mysql -u kahla -p
+CREATE DATABASE anime;
+use anime;
+create table best_anime (id smallint unsigned not null auto_increment,anime_name varchar(100) not null,constraint pk primary key(id));
+INSERT INTO best_anime(id,anime_name) VALUES(null,'Naruto'),(null,'One punch man'),(null,'kimetsu no yaiba') ;
+create table my_secrets (id smallint unsigned not null auto_increment,flag varchar(100) not null,constraint pk primary key(id));
+INSERT INTO my_secrets(id,flag) VALUES(null,'Securinets{iTs_2020_4nD_$tUpiD_Dev3loPers_$till_f4ll_F0r_SQLI}') ;
+ALTER USER 'kahla'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';

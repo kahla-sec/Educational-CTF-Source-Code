@@ -1,0 +1,17 @@
+{
+  "name": "task5",
+  "version": "1.0.0",
+  "description": "Web task for ctf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kahla",
+  "license": "ISC",
+  "dependencies": {
+    "express": "*",
+    "body-parser":"*",
+    "mysql": "^2.18.1",
+    "twing": "^4.0.6"
+  }
+}
